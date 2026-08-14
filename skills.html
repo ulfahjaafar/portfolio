@@ -1,0 +1,95 @@
+<?php
+require("connect.php");
+
+$query = "SELECT * FROM skills";
+$result = mysqli_query($conn, $query);
+
+?>
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skills | Ulfah Jaafar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e516f742f1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Ulfah Jaafar Maysaroh</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="index.php">Home</a>
+              <a class="nav-link active" href="skills.php">Skills</a>
+              <a class="nav-link" href="education.php">Education</a>
+          </div>
+        </div>
+      </nav>
+
+      <div id="skills">
+      <div class="container">
+        <div class="row">
+          <!-- title skills -->
+          <div class="col-12 pt-5 mb-3">
+            <h2 class="text-dark bold judul">Skills</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row pb-4">
+          <?php while ($row = mysqli_fetch_array($result)) { ?>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/<?= $row['gambar'] ?> "
+                class="card-img-top p-2"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center nama"> <?= $row['nama_skill'] ?> </h5>
+                <p class="card-text text-center"><?= $row['tipe'] ?></p>
+              </div>
+            </div>
+          </div>
+          <?php } ?>
+        </div>
+      </div>
+    </div>
+
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <!--title contact-->
+                <div class="col-12 pt-5">
+                    <h2 class="text-black bold judul">Contact</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-left">
+                        <p><i class="text-danger fa-solid fa-paper-plane"></i> maysarohulfah@gmail.com</p>
+                        <p><i class="text-danger fa-solid fa-square-phone"></i> +6287832123235</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/ulfahjf"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/oldiac"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/ulfah-jaafar-maysaroh-8754b024b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="copyright">
+        <p class="text-light">© Ulfah Jaafar. Sistem Informasi Manajemen.</p>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
