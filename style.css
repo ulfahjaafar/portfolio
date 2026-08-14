@@ -15,13 +15,15 @@ html{
 /*---navbar---*/
 #home{
     background: color #fff;
-    height: 50px 0;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #home .judul{
-    font-size: 95px;
+    font-size: 80px;
     font-weight: bolder;
     margin-bottom: 20px;
-    padding-top: 20px;
 }
 #home .sidejudul{
     font-size: 30px;
