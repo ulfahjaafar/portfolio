@@ -115,53 +115,28 @@ html{
 #education .h2{
     font-family: 'Archivo Black', sans-serif;
 }
-#education .card{
-    padding: 30px 0;
-    align-content: center;
-    text-align: center;
-    margin-left: 10vh;
-    margin-right: 10vh;
+#education .edu-card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    background-color: #f8f9fa;
+    border-radius: 12px;
 }
-.education-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+.education .edu-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
 }
-.education{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+.edu-logo-wrapper{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.education img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-}
-.education-list div{
-    background: #ababab;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transform: background 0.5s, transform 0.5s;
-    max-width: fit-content;
-}
-.education-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.education-list div h3{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.education-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+.education-logo{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 /* ---------contact-------- */
