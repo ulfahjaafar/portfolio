@@ -89,7 +89,7 @@ html{
 
 #education-skills .judul {
   font-family: 'Archivo Black', sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   color: #000000;
   text-align: center;
 }
@@ -143,6 +143,7 @@ html{
 #experience .judul {
   font-family: 'Archivo Black', sans-serif;
   font-size: 50px;
+  color: #000000;
 }
 
 #experience .exp-card {
