@@ -166,6 +166,26 @@ html{
   border-radius: 6px;
 }
 
+/* ---------projects-------- */
+#project {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+#project .judul {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 50px;
+  color: #000000;
+}
+
+#project .btn {
+  transition: all 0.3s ease;
+}
+
+#project .btn:hover {
+  transform: translateY(-2px);
+}
+
 /* ---------contact-------- */
 #contact{
     background-color: #fff;
