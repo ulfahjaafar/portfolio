@@ -57,59 +57,6 @@ html{
     border-radius: 10px;
 }
 
-/* ---------skills-------- */
-#skills{
-    background-color: #fff;
-    padding: 30px 0;
-}
-#skills .judul{
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 50px;
-}
-#skills .img{
-    width: 50px;
-    height: 50px;
-}
-.skill-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.skill-list div{
-    background: #ababab;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transform: background 0.5s, transform 0.5s;
-}
-.skill-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-
-}
-.skill-list div h3{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    text-align: center;
-}
-.skill-list div p{
-    text-align: center;
-}
-.skill-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.skill-list div:hover{
-    background: rgb(207, 181, 158);
-    transform: translateY(-10px);
-}
-
 /* ---------education & skills-------- */
 /* ---------education-------- */
 #education {
@@ -123,6 +70,7 @@ html{
   color: #000000;
   text-align: center;
   margin-bottom: 30px;
+}
 
 #education .edu-card {
   background-color: #f8f9fa;
@@ -148,7 +96,7 @@ html{
 
 @media (min-width: 768px) {
   .border-start-md {
-    border-left: 2px solid #dee2e6 !important;
+    border-left: 2px solid #dee2e6;
   }
 }
 
@@ -159,9 +107,9 @@ html{
 }
 
 .badge.bg-light {
-  background-color: #ffffff !important;
+  background-color: #ffffff;
   color: #495057 !important;
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #dee2e6;
 }
 
 /* ---------experience-------- */
@@ -288,5 +236,3 @@ form btn, button{
     margin-top: -40px;
     display: block;
 }
-
-/* ---------skills details-------- */
