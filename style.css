@@ -59,20 +59,19 @@ html{
 
 /* ---------education & skills-------- */
 /* ---------education-------- */
-#education {
+#education-skills {
   background-color: #ffffff;
   padding: 60px 0;
 }
 
-#education .judul {
+#education-skills .judul {
   font-family: 'Archivo Black', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   color: #000000;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-#education .edu-card {
+#education-skills .edu-card {
   background-color: #f8f9fa;
   border-radius: 16px;
 }
@@ -108,7 +107,7 @@ html{
 
 .badge.bg-light {
   background-color: #ffffff;
-  color: #495057 !important;
+  color: #495057;
   border: 1px solid #dee2e6;
 }
 
