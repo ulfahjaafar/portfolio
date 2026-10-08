@@ -116,14 +116,13 @@ html{
   background-color: #ffffff;
   padding: 60px 0;
 }
-#contact .judul{
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 50px;
-}
 
-#contact .h2{
-    font-family: 'Archivo Black', sans-serif;
-}
+#education .judul {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 50px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
 
 #education .edu-card {
   background-color: #f8f9fa;
